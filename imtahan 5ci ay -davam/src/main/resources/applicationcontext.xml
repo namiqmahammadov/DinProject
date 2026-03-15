@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="Engine" class="com.namiq.imtahan.Engine"/>
+    <bean name="Car" class="com.namiq.imtahan.Car">
+       <constructor-arg ref="Engine"/>
+    </bean>
+</beans>
