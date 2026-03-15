@@ -1,0 +1,7 @@
+spring:
+  application:
+  name: liquibaseandJpa
+  datasource:
+    url: jdbc:postgresql://localhost:5433/products_db
+    username: postgres
+    password: passsword
