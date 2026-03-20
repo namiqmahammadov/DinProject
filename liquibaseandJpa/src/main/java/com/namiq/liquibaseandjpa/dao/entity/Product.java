@@ -24,6 +24,6 @@ public class Product {
     private Double price;
     private Integer quantity;
     @CreationTimestamp
-    @Column(name = "created_at")
+
     private LocalDateTime createdAt;
 }
