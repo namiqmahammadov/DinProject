@@ -2,25 +2,13 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //task16
-        MyRunnable myRunnable=new MyRunnable();
-        Thread thread=new Thread(myRunnable);
-        thread.start();
-        //task 17
-        MYThread myThread=new MYThread();
-        myThread.start();
-        System.out.println("\n");
-    //  task 18
 
-        int [] arr={3,7,2,9,5};
-        int max=arr[0];
-        for (int i = 0; i < arr.length; i++) {
-            if(arr[i]>max){
-                max=arr[i];
+    }
+    public static int findElmenet(int[] array){
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 1; j < array.length-1; j++) {
+
             }
-
         }
-        System.out.println(max);
-        System.out.println("\n");
     }
 }
