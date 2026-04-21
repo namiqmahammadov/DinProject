@@ -1,3 +1,17 @@
+server:
+  port: 2004
 spring:
-  application:
-    name: library-project
+
+  datasource:
+    username: postgres
+    password: passsword
+    url: jdbc:postgresql://localhost:5433/library
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+    tagsSorter: alpha
+
