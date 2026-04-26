@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-students-table-001
+      author: namiqmahammadov
+      changes:
+        - createTable:
+            tableName: students
+            columns:
+              - column:
+                  name: id
+                  type: BIGSERIAL
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: name
+                  type: VARCHAR(60)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: age
+                  type: int
+                  constraints:
+                    nullable: false
+                    
+
+              

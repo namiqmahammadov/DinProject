@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-courses-table-002
+      author: namiqmahammadov
+      changes:
+        - createTable:
+            tableName: courses
+            columns:
+              - column:
+                  name: id
+                  type: BIGSERIAL
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: title
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+
+
+
+              
