@@ -38,4 +38,14 @@ public class LoanMapper {
                 .isReturned(loan.getIsReturned())
                 .build();
     }
+    public static void updateEntity(LoanRequest request, Loan loan, User user, Book book) {
+        if (request == null || loan == null) {
+            return;
+        }
+
+        loan.setUser(user);
+        loan.setBook(book);
+        loan.setBorrowDate(request.getBorrowDate());
+        loan.setDueDate(request.getDueDate());
+    }
 }
